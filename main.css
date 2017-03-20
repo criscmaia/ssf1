@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: repeat(3, 33.333% [columns]);
     grid-template-rows: repeat(2, 1fr [rows]);
-    grid-template-areas: "video calendar info" "video calendar info"
+    grid-template-areas: "video calendar calendar" "other calendar calendar"
 }
 
 .grid-container {
