@@ -3,16 +3,32 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr [columns]);
     grid-template-rows: repeat(2, 1fr [rows]);
+    grid-template-areas: "video calendar info" "video calendar info"
 }
 
 .grid-container {
     display: grid;
 }
 
-.box {
-  background-color: #444;
-  color: #fff;
-  border-radius: 5px;
-  padding: 20px;
-  font-size: 150%;
+.painting {
+    color: #fff;
+    border-radius: 25px;
+    padding: 20px;
+    font-size: 150%;
+    border: 2px red solid;
+}
+
+.video {
+    background-color: #444;
+    grid-area: video;
+}
+
+.calendar {
+    background-color: #777;
+    grid-area: calendar;
+}
+
+.info {
+    background-color: #999;
+    grid-area: info;
 }
